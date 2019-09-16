@@ -15,11 +15,8 @@ python3 launch.py --api-key API_KEY
 
 ## Command Line Options
 - `-h`, `--help`            show this help message and exit
-- `--mintojoin MINTOJOIN`
--                         Minimum number of ergs to be locked in the newly
--                         created member’s box
-- `-s SERVER, --server SERVER`
--                         Address of RPC server in format SERVER:PORT
+- `--mintojoin MINTOJOIN` Minimum number of ergs to be locked in the newly created member’s box
+- `-s SERVER, --server SERVER` Address of RPC server in format SERVER:PORT
 - `-q`, `--quiet`         Do not show debug output
 - `--api-key API_KEY`     API key to pass RPC node authentication
 - `--mainnet`             Using main net, default server localhost:9053
@@ -39,7 +36,7 @@ python3 launch.py --api-key API_KEY
 git clone https://github.com/sininen-taivas/LETS
 git submodule init
 git submodule update
-# setub virtualenv
+# setup virtualenv
 python3 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
