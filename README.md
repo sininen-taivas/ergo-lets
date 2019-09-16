@@ -56,9 +56,9 @@ tokenBox.propositionBytes == SELF.propositionBytes
 - sending json document to `/script/p2sAddress`
 - received string using as address for request to `/wallet/transaction/generate`
 - send transaction to `/transactions`
-- write to system.json follow object `{"boxId":$boxId, "transactionId":$txId, "asset": $tokenId, "updated": $timestamp}` [^note1]
+- write to system.json follow object `{"boxId":$boxId, "transactionId":$txId, "asset": $tokenId, "updated": $timestamp}`
 
-[^note1]: `tokenId` is first identifer from `assets` list from first `outputs`
+`tokenId` is first identifer from `assets` list from first `outputs`
 
 ### Development
 
