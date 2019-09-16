@@ -20,8 +20,8 @@ python3 launch.py --api-key API_KEY
 
 ### How it works
 - receives `api-key` as required param
-- script allow run system with input params like `--mintojoin` default is `10`
-- script generate random 32 bytes and save it as base58-string in `memberScriptHash` variable.
+- script allows run system with input params like `--mintojoin` default is `10`
+- script generates random 32 bytes and save it as base58-string in `memberScriptHash` variable.
 
 ```scala
 {
@@ -58,7 +58,7 @@ tokenBox.propositionBytes == SELF.propositionBytes
 - send transaction to `/transactions`
 - write to system.json follow object `{"boxId":$boxId, "transactionId":$txId, "asset": $tokenId, "updated": $timestamp}` [^note1]
 
-[^note1]: `tockenId` is first identifer from `assets` list from first `outputs`
+[^note1]: `tokenId` is first identifer from `assets` list from first `outputs`
 
 ### Development
 
