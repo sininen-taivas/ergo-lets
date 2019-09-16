@@ -116,7 +116,7 @@ tokenBox.propositionBytes == SELF.propositionBytes
 
     # If no errors POST to /transactions
     url_ = '/transactions'
-    logging.debug('Send transaction to %s' % url_)
+    logging.debug('send transaction to %s' % url_)
     code, txid = api.request(url_, data=tx_json)
     if code != 200:
         logging.error(txid)
