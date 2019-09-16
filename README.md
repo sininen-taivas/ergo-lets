@@ -25,10 +25,12 @@ python3 launch.py --api-key API_KEY
 ## How it works
 - receives `api-key` as required param
 - generate random 32 bytes string
-- sending json document in `/script/p2sAddress`
+- sending json document to `/script/p2sAddress`
 - received string using as address for request to `/wallet/transaction/generate`
 - send transaction to `/transactions`
-- wrint to system.json follow object `{"boxId":$boxId, "transactionId":$txId, "asset": $tokenId, "updated": $timestamp}`
+- write to system.json follow object `{"boxId":$boxId, "transactionId":$txId, "asset": $tokenId, "updated": $timestamp}` [^note1]
+
+[^note1]: `tockenId` is first identifer from `assets` list from first `outputs`
 
 ## Development
 
